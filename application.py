@@ -1,12 +1,13 @@
 from flask import Flask
-
+from Deployee import Database
 application = Flask(__name__)
 
 app = application
 
 @app.route('/')
 def home():
-    return "I'm changing my message"
+    obj =Database.Database()
+    return obj.fun()
 
 
 
