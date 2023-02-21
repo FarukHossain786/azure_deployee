@@ -6,7 +6,7 @@ app = application
 
 @app.route('/')
 def home():
-    return "You are in home"
+    return "I'm changing my message"
 
 
 
